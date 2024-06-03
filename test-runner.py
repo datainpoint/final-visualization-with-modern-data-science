@@ -63,7 +63,7 @@ class TestFinal(unittest.TestCase):
         for party in ["民主進步黨", "中國國民黨", "台灣民眾黨", "小民參政歐巴桑聯盟", "台灣綠黨", "時代力量"]:
             self.assertIn(party, parties)
         
-asgmt = importlib.import_module("suggested_answers")
+asgmt = importlib.import_module("answers")
 suite = unittest.TestLoader().loadTestsFromTestCase(TestFinal)
 runner = unittest.TextTestRunner(verbosity=2)
 test_results = runner.run(suite)
